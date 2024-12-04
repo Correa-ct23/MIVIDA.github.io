@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*HEADER*/
+
+header{
+    height: 100px;
+    background: rgb(240, 98, 180);
+    padding: 0 50 px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+header img{
+    width: 72px;
+    border: violet ridge 2px;
+}
+
+
+header h2{
+    text-transform: uppercase;
+    color: rgb(255, 187, 227);
+    font-weight: 200;
+    font-family:cursive;
+    font-size: 35px;
+}
+
+.menu a{
+    text-transform: uppercase;
+    color:rgb(255, 187, 227);
+    font-weight: 100;
+    font-size: 13px;
+    font-family:cursive;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.mostrar-menu, .esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+    display: none;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.menu a:hover, .mostrar-menu:hover, .esconder-menu:hover{
+    color: rgb(252, 149, 209);
+}
+
+#check{
+    display: none;
+}
+
+
+
+/*SECCION BANNER*/
+
+#banner{
+    padding: 0 50px;
+    background-image: url(./images/banner2.jpeg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+#banner::before{
+    content: '';
+    background: rgb(92, 77, 86, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    left:0;
+}
+
+.contenido-banner h3{
+    font-size: 30 px;
+    font-weight: 400;
+    padding: 10px 0;
+    height: 50%;
+}
+
+.contenido-banner span{
+    font-weight: 600;
+    font-family: cursive;
+    color: #e485bc;;
+    justify-content: center;
+    display:flex;
+    font-size: 35px;
+}
+
+.contenido-banner{
+    position:relative;
+    color: rgb(255, 187, 227);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-catalogo{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid rgb(255, 187, 227);
+    font-family: cursive;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.boton-catalogo:hover{
+    background: rgb(255, 187, 227);
+    transition: all 0.4s;
+}
+
+/*SECCION PRODUCTOS*/
+
+#productos{
+    padding: 50px 50px;
+    /*display: flex;*/
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(240, 98, 180);
+}
+
+#productos div{
+    padding: 30px 30px;
+    color: white;
+    overflow-x: hidden;
+}
+
+#productos div p{
+    font-family: cursive;
+}
+
+#productos div h1{
+    
+    text-transform: uppercase;
+    color: rgb(255, 187, 227);
+    font-weight: 200;
+    font-family:cursive;
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    overflow-x: hidden;
+
+}
+
+.renglon1, .renglon2{
+    display: flex;
+}
+
+#productos img{
+    border-radius: 100%;
+    object-fit: cover;
+    width: 280px;
+    height: 280px;
+}
+
+
+#productos div h4{
+    color: rgb(255, 187, 227);
+    font-family:cursive;
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
+.espacio{
+    text-align:justify;
+}
+
+.boton-saber-mas{
+    font-family:cursive;
+    text-decoration: none;
+    color: rgb(255, 187, 227);
+    padding: 10px 30px;
+    border: 3px solid rgb(255, 187, 227);
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+    display: inline-block;
+}
+
+.boton-saber-mas:hover{
+    background: rgb(255, 187, 227);
+    color: #fff;
+}
+
+/*SECCION INFORMACION*/
+
+#informacion{
+    padding: 100px ;
+    background-color:rgb(241, 128, 194);
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto{
+    color: white;
+    font-family: cursive;
+}
+
+.texto h4{
+    font-size: 18px;
+    color: #a7a7a7;
+    margin-bottom: 30px;
+}
+
+.texto p{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 15px;
+    font-family: cursive;
+}
+
+#informacion div h1{
+    
+    text-transform: uppercase;
+    color: rgb(255, 187, 227);
+    font-weight: 200;
+    font-family:cursive;
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    overflow-x: hidden;
+}
+
+/*SECCION MAPA O UBICACION*/
+
+#mapa{
+    padding: 50px 50px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(240, 98, 180);
+}
+
+#mapa div h1{
+    
+    text-transform: uppercase;
+    color: rgb(255, 187, 227);
+    font-weight: 200;
+    font-family:cursive;
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    overflow-x: hidden;
+}
+
+/*FOOTER*/
+
+footer{
+    padding: 80px 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(241, 128, 194);
+    overflow-x: hidden;
+}
+
+footer img{
+    width: 250px;
+}
+
+.links h4{
+    font-family:cursive;
+    color: rgb(255, 187, 227);
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.links ul p{
+    font-family:cursive;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+@media(max-width:768px){
+
+    /*HEADER*/
+    .mostrar-menu, .esconder-menu{
+        display: block;
+        
+    }
+
+    .menu{
+
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: black;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~ .menu{
+        right: 0;
+    }
+
+    /*SECCION PRODUCTOS*/
+    .renglon1, .renglon2{
+        flex-direction: column;
+    }
+
+    /*SECCION INFORMACION*/
+    .info{
+        flex-direction: column;
+    }
+
+
+    /*SECCION CONTACTO*/
+    .datos-form{
+        flex-direction: column;
+    }
+
+
+    /*FOOTER*/
+    footer{
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    #mapa{
+        padding: 10px 10px;
+    }
+
+    footer img{
+        width: 500px;
+    }
+
+}
